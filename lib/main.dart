@@ -31,8 +31,20 @@ class _ScaffoldSampleState extends State<ScaffoldSample> {
       appBar: AppBar(
         title: Text('Scaffold 기본 예제'),
       ),
-      body: Center(
-        child: Text('Contents'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Contents'),
+          TextFormField(
+            decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(25),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
 
       // Drawer 메뉴 생성
@@ -51,6 +63,18 @@ class _ScaffoldSampleState extends State<ScaffoldSample> {
         child: Center(
           child: Text('슬라이드 메뉴'),
         ),
+      ),
+
+      // 텍스트 폼을 눌러서 키보드가 올라올 때 플로팅 버튼이 같이 올라오지 않게 하기 위해서 사용
+      resizeToAvoidBottomInset: false,
+
+      // floating 버튼 생성
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('click edit button');
+        },
+        child: Icon(Icons.edit),
+        backgroundColor: Colors.cyan,
       ),
 
       // 아래 쪽에 내비게이션바 생성
