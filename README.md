@@ -1,16 +1,6 @@
-# scaffold_sample
+# scaffold-sample
 
-A new Flutter project.
+## :heavy_check_mark: [main.dart](https://github.com/Riudiu/scaffold-sample/blob/master/lib/main.dart)
 
-## Getting Started
+![scaffold_sample_main](https://user-images.githubusercontent.com/86466976/147745460-d2eb781c-598c-41dd-abde-ae5129721204.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
